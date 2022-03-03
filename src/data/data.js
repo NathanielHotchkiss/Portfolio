@@ -20,7 +20,7 @@ export const projectsData = [
           "Built with React, Node.js, Express.js, Knex.js, PostgreSQL, Bootstrap.",
       },
     ],
-    url: "https://nathans-restaurant-reservations.vercel.app",
+    url: "https://hotchkiss-reservations.vercel.app",
     repo: "https://github.com/NathanielHotchkiss/Restaurant-Reservations",
   },
   {
