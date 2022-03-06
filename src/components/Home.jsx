@@ -5,7 +5,7 @@ export default function Home() {
   const date = getDate();
 
   return (
-    <div className="relative py-16 min-h-screen">
+    <div className="flex relative py-16 min-h-screen md:place-items-center justify-center">
       <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
         <div
           className="relative h-full text-lg max-w-prose mx-auto"

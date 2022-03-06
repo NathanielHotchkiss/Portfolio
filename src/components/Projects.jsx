@@ -45,7 +45,7 @@ export default function Projects() {
 
           return (
             <div
-              className="w-sm sm:max-w-sm bg-white dark:shadow-transparent dark:shadow-md dark:bg-dark-gray overflow-hidden shadow rounded-lg my-4 mx-2"
+              className="w-sm sm:max-w-sm bg-white dark:shadow-transparent dark:shadow-md dark:bg-dark-gray overflow-hidden shadow rounded-lg my-4 mx-2 lg:mt-24"
               key={id}
             >
               <h3 className="px-4 py-5 sm:px-6 text-xl font-bold text-black dark:text-custom-magenta">
