@@ -5,7 +5,7 @@ export default function Resume() {
   const { email, phone, location } = resumeContact;
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center min-h-screen">
       <div className="bg-white dark:shadow-transparent dark:bg-dark-gray dark:bg-opacity-80 md:max-w-2xl lg:max-w-3xl mx-2 my-4 md:my-8 px-4 py-4 md:px-20 md:py-10 lg:py-18 shadow-2xl">
         <div className="sm:flex justify-center py-2">
           <h1 className="text-sm sm:text-md md:text-lg lg:text-xl text-center font-semibold">
