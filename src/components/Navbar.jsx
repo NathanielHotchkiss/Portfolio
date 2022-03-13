@@ -6,19 +6,19 @@ export default function Navbar() {
       <nav className="flex items-center justify-center h-16 mx-auto shadow-md">
         <Link
           to="/projects"
-          className="text-sm md:text-lg font-medium tracking-wide text-white hover:text-gray-200 hover:scale-105 py-2"
+          className="text-md md:text-lg font-medium tracking-wide text-white hover:text-gray-300 hover:scale-110 py-2"
         >
           projects
         </Link>
         <Link
           to="/"
-          className="text-xl md:text-2xl font-bold tracking-wide text-white hover:text-gray-200 hover:scale-105 px-6 md:px-8 py-1"
+          className="text-xl md:text-2xl font-bold tracking-wide text-white hover:text-gray-300 hover:scale-110 px-8 py-1"
         >
           nh
         </Link>
         <Link
           to="/resume"
-          className="text-sm md:text-lg font-medium tracking-wide text-white hover:text-gray-200 hover:scale-105 py-2"
+          className="text-md md:text-lg font-medium tracking-wide text-white hover:text-gray-300 hover:scale-110 py-2"
         >
           resume
         </Link>

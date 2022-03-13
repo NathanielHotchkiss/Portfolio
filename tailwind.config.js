@@ -7,7 +7,6 @@ module.exports = {
         "custom-purple": "#1d2671",
         "custom-magenta": "#c33764",
         "dark-gray": "#121212",
-        "custom-black": "#000e14",
       },
     },
   },

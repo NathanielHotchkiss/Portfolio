@@ -104,7 +104,6 @@ export default function Home() {
             applications. I'm looking for an opportunity to join a team of
             developers.
           </p>
-
           <div className="flex justify-center w-4/5 md:w-2/3 mx-auto my-10">
             <div className="flex flex-wrap justify-center">
               <i className="devicon-javascript-plain text-4xl md:text-5xl text-black dark:text-gray-200 opacity-90 my-4 mr-4"></i>
