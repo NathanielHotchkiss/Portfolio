@@ -25,6 +25,25 @@ export const projectsData = [
   },
   {
     id: "2",
+    img: "https://live.staticflickr.com/65535/51935265692_7be03e42a2_k.jpg",
+    title: "Character Creator",
+    info: [
+      {
+        id: "1",
+        description:
+          "Ongoing contributor for the Meridian Campaign Setting, a character creator app using Dungeons & Dragons 5e rules.",
+      },
+      {
+        id: "2",
+        description:
+          "Full-stack application built with React, Node.js, Express.js, Knex.js, PostgreSQL, Bootstrap.",
+      },
+    ],
+    url: "https://character-architect.vercel.app",
+    repo: "https://github.com/OldSociety/character-architect",
+  },
+  {
+    id: "3",
     img: "https://live.staticflickr.com/65535/51911482517_f6d9ea12d1_k.jpg",
     title: "WeLoveMovies",
     info: [
@@ -47,7 +66,7 @@ export const projectsData = [
     repo: "https://github.com/NathanielHotchkiss/WeLoveMovies-server",
   },
   {
-    id: "3",
+    id: "4",
     img: "https://live.staticflickr.com/65535/51912448226_db55ff1504_k.jpg",
     title: "React Flashcards",
     info: [
