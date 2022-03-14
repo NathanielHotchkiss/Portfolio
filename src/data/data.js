@@ -21,7 +21,7 @@ export const projectsData = [
       },
     ],
     url: "https://hotchkiss-reservations.vercel.app",
-    repo: "https://github.com/NathanielHotchkiss/Restaurant-Reservations",
+    repo: "https://github.com/NathanielHotchkiss/Periodic-Tables",
   },
   {
     id: "2",
@@ -31,7 +31,7 @@ export const projectsData = [
       {
         id: "1",
         description:
-          "Ongoing contributor for the Meridian Campaign Setting, a character creator app using Dungeons & Dragons 5e rules.",
+          "Active contributor for the Meridian Campaign Setting, a character creator app using Dungeons & Dragons 5e rules.",
       },
       {
         id: "2",

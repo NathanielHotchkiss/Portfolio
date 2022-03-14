@@ -2,52 +2,52 @@ import { projectsData } from "../data/data.js";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen flex flex-wrap justify-center xl:px-24 2xl:px-80">
+    <div className="min-h-screen flex flex-wrap justify-center py-8 xl:px-24 2xl:px-80">
       {projectsData.map((project) => {
         const { title, info, img, repo, url, id } = project;
 
         const liveAppButton = () => {
           if (url) {
             return (
-              <button
-                type="button"
-                className="inline-flex justify-center w-36 mt-4 py-2 border border-transparent rounded-md shadow-sm bg-custom-purple dark:bg-custom-magenta hover:bg-custom-magenta dark:hover:bg-custom-purple"
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-white"
               >
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-md font-medium text-white"
+                <button
+                  type="button"
+                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-custom-purple dark:bg-custom-magenta hover:bg-custom-magenta dark:hover:bg-custom-purple"
                 >
                   Live Application
-                </a>
-              </button>
+                </button>
+              </a>
             );
           } else {
             return (
-              <button
-                type="button"
-                className="inline-flex justify-center w-36 mt-4 py-2 border border-transparent rounded-md shadow-sm bg-gray-600"
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-md font-medium text-white"
               >
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-md font-medium text-white"
+                <button
+                  type="button"
+                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-gray-500"
                 >
-                  Coming Soon
-                </a>
-              </button>
+                  Not Available
+                </button>
+              </a>
             );
           }
         };
 
         return (
           <div
-            className="w-sm sm:max-w-md bg-white dark:bg-neutral-900 dark:shadow-transparent shadow-md rounded-lg my-4 md:mx-2"
+            className="w-sm sm:max-w-md bg-white dark:bg-neutral-900 shadow-md sm:rounded-lg mb-8 md:mx-4"
             key={id}
           >
-            <h3 className="px-4 py-5 text-xl font-bold text-black dark:text-custom-magenta">
+            <h3 className="font-bold text-xl text-black dark:text-custom-magenta px-4 py-5">
               {title}
             </h3>
 
@@ -61,7 +61,7 @@ export default function Projects() {
               />
             </div>
 
-            <ol className="py-6 pl-4 sm:h-56 list-disc marker:text-black dark:marker:text-custom-magenta">
+            <ol className="list-disc marker:text-black dark:marker:text-custom-magenta py-6 pl-4 sm:h-48">
               {info.map((detail) => {
                 const { id, description } = detail;
                 return (
@@ -71,20 +71,20 @@ export default function Projects() {
                 );
               })}
             </ol>
-            <div className="flex flex-end justify-around mb-8">
-              <button
-                type="button"
-                className="inline-flex justify-center w-36 mt-4 py-2 border border-transparent rounded-md shadow-sm bg-custom-purple dark:bg-custom-magenta hover:bg-custom-magenta dark:hover:bg-custom-purple"
+            <div className="flex flex-end justify-around my-6">
+              <a
+                href={repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-md font-medium text-white"
               >
-                <a
-                  href={repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-md font-medium text-white"
+                <button
+                  type="button"
+                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-custom-purple dark:bg-custom-magenta hover:bg-custom-magenta dark:hover:bg-custom-purple"
                 >
                   Source Code
-                </a>
-              </button>
+                </button>
+              </a>
               {liveAppButton()}
             </div>
           </div>
