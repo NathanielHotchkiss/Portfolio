@@ -41,15 +41,15 @@ export default function Resume() {
           </h3>
           <p className="text-xs sm:text-sm px-2 py-1">
             <span className="font-semibold">Front End:</span> JavaScript ES6,
-            React, React Hooks, React Router, HTML5, CSS3, Bootstrap
+            React, React Hooks, React Router, HTML5, CSS3, Bootstrap, TailwindCSS
           </p>
           <p className="text-xs sm:text-sm px-2 py-1">
             <span className="font-semibold">Back End:</span> Node.js,
             Express.js, Knex.js, PostgreSQL
           </p>
           <p className="text-xs sm:text-sm px-2 py-1">
-            <span className="font-semibold">Additional Tools & Skills:</span>
-            Git, Github, Mocha, Chai, Unit testing, Algorithms, Data structures
+            <span className="font-semibold">Additional Tools & Skills: </span>
+            Git, Github, Figma, Heroku, Unit testing(Mocha, Chai), Algorithms, Data structures, RESTful APIs
           </p>
           <div className="w-full border-t border-gray-300 my-2"></div>
         </>
