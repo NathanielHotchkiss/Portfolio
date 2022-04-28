@@ -6,7 +6,7 @@ export default function Resume() {
 
   return (
     <div className="flex justify-center min-h-screen py-10">
-      <div className="shadow-lg bg-white dark:bg-neutral-900 md:max-w-2xl lg:max-w-3xl px-4 md:px-16 py-6 md:py-8">
+      <div className="shadow-lg bg-white dark:bg-neutral-900 md:max-w-2xl lg:max-w-3xl px-4 md:px-16 py-6 md:py-8 sm:rounded-lg">
         <div className="sm:flex justify-center py-4">
           <h1 className="md:text-lg lg:text-xl text-center font-semibold">
             Nathaniel Hotchkiss - Web Developer
@@ -16,7 +16,9 @@ export default function Resume() {
         <div className="flex flex-col sm:flex-row justify-center mx-6 mb-2">
           <p className="text-xs md:text-sm text-center ">
             {email}
-            <span className="hidden sm:inline text-sm md:text-base px-1">|</span>
+            <span className="hidden sm:inline text-sm md:text-base px-1">
+              |
+            </span>
           </p>
           <p className="text-xs md:text-sm text-center ">
             {phone}
@@ -26,22 +28,17 @@ export default function Resume() {
         </div>
 
         <>
-          <h3 className="font-semibold text-base py-1">
-            Summary
-          </h3>
-          <p className="text-xs sm:text-sm px-2 py-1">
-            {resumeSummary}
-          </p>
+          <h3 className="font-semibold text-base py-1">Summary</h3>
+          <p className="text-xs sm:text-sm px-2 py-1">{resumeSummary}</p>
           <div className="w-full border-t border-gray-300 my-2"></div>
         </>
 
         <>
-          <h3 className="font-semibold text-base py-1">
-            Technical Skills
-          </h3>
+          <h3 className="font-semibold text-base py-1">Technical Skills</h3>
           <p className="text-xs sm:text-sm px-2 py-1">
             <span className="font-semibold">Front End:</span> JavaScript ES6,
-            React, React Hooks, React Router, HTML5, CSS3, Bootstrap, TailwindCSS
+            React, React Hooks, React Router, HTML5, CSS3, Bootstrap,
+            TailwindCSS
           </p>
           <p className="text-xs sm:text-sm px-2 py-1">
             <span className="font-semibold">Back End:</span> Node.js,
@@ -49,15 +46,14 @@ export default function Resume() {
           </p>
           <p className="text-xs sm:text-sm px-2 py-1">
             <span className="font-semibold">Additional Tools & Skills: </span>
-            Git, Github, Figma, Heroku, Unit testing(Mocha, Chai), Algorithms, Data structures, RESTful APIs
+            Git, Github, Figma, Heroku, Unit testing(Mocha, Chai), Algorithms,
+            Data structures, RESTful APIs
           </p>
           <div className="w-full border-t border-gray-300 my-2"></div>
         </>
 
         <>
-          <h3 className="font-semibold text-base pb-2">
-            Experience
-          </h3>
+          <h3 className="font-semibold text-base pb-2">Experience</h3>
           {resumeExperience.map((resume) => {
             const {
               id,
@@ -70,17 +66,11 @@ export default function Resume() {
             } = resume;
             return (
               <div className="py-1" key={id}>
-                <h4 className="text-xs sm:text-sm font-semibold">
-                  {title}
-                </h4>
+                <h4 className="text-xs sm:text-sm font-semibold">{title}</h4>
                 <div className="flex flex-col sm:flex-row justify-between">
                   <div className="flex">
-                    <p className="text-xs sm:text-sm pl-2">
-                      {company}
-                    </p>
-                    <span className="text-xs sm:text-sm px-1">
-                      |
-                    </span>
+                    <p className="text-xs sm:text-sm pl-2">{company}</p>
+                    <span className="text-xs sm:text-sm px-1">|</span>
                     <p className="text-xs sm:text-sm">{location}</p>
                   </div>
                   <p className="text-xs sm:text-sm px-2 py-1">
@@ -90,10 +80,7 @@ export default function Resume() {
                 {responsibilities.map((responsibility) => {
                   const { id, description } = responsibility;
                   return (
-                    <p
-                      className="text-xs sm:text-sm px-2 py-1"
-                      key={id}
-                    >
+                    <p className="text-xs sm:text-sm px-2 py-1" key={id}>
                       {"- "}
                       {description}
                     </p>
@@ -106,9 +93,7 @@ export default function Resume() {
 
         <>
           <div className="w-full border-t border-gray-300 my-2"></div>
-          <h3 className="font-semibold text-base pb-2">
-            Education
-          </h3>
+          <h3 className="font-semibold text-base pb-2">Education</h3>
           <p className="text-xs sm:text-sm font-semibold">
             Software Engineering Certificate
           </p>
