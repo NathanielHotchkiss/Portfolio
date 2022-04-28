@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </h1>
         </div>
-        <div className="my-6 max-w-prose mx-16 md:mx-24">
+        <div className="my-6 max-w-prose mx-8 sm:mx-16 md:mx-24">
           <p className="text-xl">
             I leverage my knowledge of JavaScript to create simple,
             user-friendly websites and applications.
