@@ -13,11 +13,11 @@ export default function Projects() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-white"
+                className="text-white dark:text-black"
               >
                 <button
                   type="button"
-                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-custom-purple dark:bg-custom-magenta hover:bg-custom-magenta dark:hover:bg-custom-purple"
+                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-neutral-800 hover:bg-neutral-700 dark:bg-neutral-100"
                 >
                   Live Application
                 </button>
@@ -29,11 +29,11 @@ export default function Projects() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-md font-medium text-white"
+                className="text-white dark:text-black"
               >
                 <button
                   type="button"
-                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-gray-500"
+                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-neutral-700 dark:bg-neutral-200"
                 >
                   Not Available
                 </button>
@@ -80,7 +80,7 @@ export default function Projects() {
               >
                 <button
                   type="button"
-                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 bg-custom-purple dark:bg-custom-magenta hover:bg-custom-magenta dark:hover:bg-custom-purple"
+                  className="justify-center border border-transparent rounded-md shadow-lg w-40 py-2 text-white dark:text-black bg-neutral-800 hover:bg-neutral-700 dark:bg-neutral-100"
                 >
                   Source Code
                 </button>

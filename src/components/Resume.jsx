@@ -6,7 +6,7 @@ export default function Resume() {
 
   return (
     <div className="flex justify-center min-h-screen py-10">
-      <div className="shadow-lg bg-white dark:bg-neutral-900 md:max-w-2xl lg:max-w-3xl px-4 md:px-16 py-6 md:py-8 sm:rounded-lg">
+      <div className="shadow-lg bg-white dark:bg-black md:max-w-2xl lg:max-w-3xl px-4 md:px-16 py-6 md:py-8 sm:rounded-lg">
         <div className="sm:flex justify-center py-4">
           <h1 className="md:text-lg lg:text-xl text-center font-semibold">
             Nathaniel Hotchkiss - Web Developer
