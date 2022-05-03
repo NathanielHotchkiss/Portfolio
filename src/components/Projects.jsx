@@ -44,10 +44,10 @@ export default function Projects() {
 
         return (
           <div
-            className="w-sm sm:max-w-md bg-white dark:bg-neutral-900 shadow-md sm:rounded-lg mb-8 md:mx-4"
+            className="w-sm sm:max-w-md bg-white dark:bg-black shadow-md rounded-lg mb-8 mx-2"
             key={id}
           >
-            <h3 className="font-bold text-xl text-black dark:text-custom-magenta px-4 py-5">
+            <h3 className="font-bold text-2xl text-zinc-900 dark:text-zinc-200 px-4 py-5">
               {title}
             </h3>
 

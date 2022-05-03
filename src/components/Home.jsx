@@ -18,13 +18,13 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="mt-4 mx-auto md:mx-2">
+          <div className=" mx-auto md:mx-2">
             <span className="hidden sm:relative sm:inline-block before:block before:absolute before:-inset-2 before:-skew-y-3 before:bg-rose-500">
               <span className="relative text-left text-neutral-100 dark:text-gray-200 text-xl font-bold tracking-wide">
                 Hello!
               </span>
             </span>
-            <span className="block mt-3 text-2xl sm:text-4xl text-center sm:text-left font-extrabold tracking-wide text-black dark:text-rose-500">
+            <span className="block sm:mt-3 ml-8 justify-center text-5xl sm:text-6xl text-left font-lora font-extrabold tracking-wide text-black dark:text-rose-500">
               I'm Nathaniel Hotchkiss
             </span>
           </div>

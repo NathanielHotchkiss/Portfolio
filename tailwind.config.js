@@ -8,6 +8,9 @@ module.exports = {
         "custom-magenta": "#c33764",
         "dark-gray": "#121212",
       },
+      fontFamily: {
+        'lora': ['Lora', 'serif'] 
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
