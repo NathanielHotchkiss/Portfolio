@@ -1,26 +1,36 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-center h-16 mx-auto">
-      <Link
+    <nav className="flex items-center justify-center h-16 mx-auto py-2">
+      <NavLink
         to="/"
-        className="text-md md:text-lg font-medium tracking-wide text-gray-900 dark:text-neutral-200 hover:text-rose-600 hover:scale-110 py-2"
+        className={({ isActive }) =>
+          isActive
+            ? "text-base font-bold tracking-wide text-zinc-700 dark:text-zinc-400"
+            : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200"
+        }
       >
         home
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/projects"
-        className="text-md md:text-lg font-medium tracking-wide text-gray-900 dark:text-neutral-200 hover:text-rose-600 hover:scale-110 py-2 mx-8"
-      >
+        className={({ isActive }) =>
+          isActive
+            ? "text-base font-bold tracking-wide text-zinc-700 dark:text-zinc-400 mx-4 sm:mx-12"
+            : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200 mx-4 sm:mx-12"
+        } >
         projects
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/resume"
-        className="text-md md:text-lg font-medium tracking-wide text-gray-900 dark:text-neutral-200 hover:text-rose-600 hover:scale-110 py-2"
-      >
+        className={({ isActive }) =>
+        isActive
+          ? "text-base font-bold tracking-wide text-zinc-700 dark:text-zinc-400"
+          : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200"
+      } >
         resume
-      </Link>
+      </NavLink>
     </nav>
   );
 }

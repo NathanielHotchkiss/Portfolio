@@ -2,29 +2,36 @@ import memojiMacbook from "../images/memojiMacbook.png";
 
 export default function Home() {
   return (
-    <div className="flex relative py-16 md:place-items-center justify-center min-h-screen">
+    <div className="flex place-items-center justify-center min-h-screen">
       <div className="relative">
-        <div className="max-w-prose mx-auto mb-18">
-          <h1 className="sm:flex justify-center">
-            <div className="flex justify-center mb-6">
-              <img
-                className="inline-block h-24 sm:w-24 rounded-full shadow-lg dark:shadow-transparent dark:opacity-75"
-                src={memojiMacbook}
-                alt="a memeoji version of Nathan"
-              />
-            </div>
-            <div className="sm:mt-3">
-              <span className="block sm:ml-6 text-center sm:text-left text-rose-600 dark:text-gray-200 text-lg md:text-xl font-semibold tracking-wide">
+        <div className="flex flex-col sm:flex-row justify-center">
+          <div className="sm:mr-4 flex-shrink-0 self-center">
+            <img
+              className="h-24 w-24 mb-1 sm:mb-0 rounded-full shadow-lg dark:shadow-transparent dark:opacity-85"
+              src={memojiMacbook}
+              alt="a memeoji version of Nathan"
+            />
+            <span className="relative inline-block sm:hidden ml-12 before:block before:absolute before:-inset-2 before:-skew-y-3 before:bg-rose-500">
+              <span className="relative text-center text-neutral-100 dark:text-gray-200 text-lg font-bold tracking-wide">
                 Hello!
               </span>
-              <span className="mt-2 sm:ml-6 block text-2xl text-center sm:text-left font-extrabold tracking-wide text-black dark:text-custom-magenta sm:text-4xl">
-                I'm Nathaniel Hotchkiss
+            </span>
+          </div>
+
+          <div className="mt-4 mx-auto md:mx-2">
+            <span className="hidden sm:relative sm:inline-block before:block before:absolute before:-inset-2 before:-skew-y-3 before:bg-rose-500">
+              <span className="relative text-left text-neutral-100 dark:text-gray-200 text-xl font-bold tracking-wide">
+                Hello!
               </span>
-            </div>
-          </h1>
+            </span>
+            <span className="block mt-3 text-2xl sm:text-4xl text-center sm:text-left font-extrabold tracking-wide text-black dark:text-rose-500">
+              I'm Nathaniel Hotchkiss
+            </span>
+          </div>
         </div>
-        <div className="my-6 max-w-prose mx-8 sm:mx-16 md:mx-24">
-          <p className="text-xl">
+
+        <div className="max-w-prose my-6 mx-12">
+          <p className="text-lg">
             I leverage my knowledge of JavaScript to create simple,
             user-friendly websites and applications.
           </p>
