@@ -2,7 +2,7 @@ import memojiMacbook from "../images/memojiMacbook.png";
 
 export default function Home() {
   return (
-    <div className="flex place-items-center justify-center min-h-screen mx-4">
+    <div className="flex place-items-center justify-center min-h-screen mx-6">
       <div className="relative">
         <div className="flex flex-col sm:flex-row justify-center">
           <div className="sm:mr-2 flex-shrink-0 self-center">
