@@ -5,7 +5,7 @@ export default function Toggle() {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
   return (
-    <div className="transition duration-1000 ease-in-out rounded-full absolute right-0 top-0 mr-2 mt-5 md:mr-4">
+    <div className="transition duration-1000 ease-in-out rounded-full absolute right-0 top-0 mr-2 mt-3 md:mr-4">
       {theme === "dark" ? (
         <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           <svg

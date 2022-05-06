@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-center h-16 mx-auto py-2">
+    <nav className="flex justify-center items-center h-14">
       <NavLink
         to="/"
         className={({ isActive }) =>
           isActive
-            ? "text-base font-bold tracking-wide text-zinc-700 dark:text-zinc-400"
+            ? "text-base font-extrabold tracking-wide text-zinc-700 dark:text-zinc-400"
             : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200"
         }
       >
@@ -17,8 +17,8 @@ export default function Navbar() {
         to="/projects"
         className={({ isActive }) =>
           isActive
-            ? "text-base font-bold tracking-wide text-zinc-700 dark:text-zinc-400 mx-4 sm:mx-12"
-            : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200 mx-4 sm:mx-12"
+            ? "text-base font-extrabold tracking-wide text-zinc-700 dark:text-zinc-400 mx-6 sm:mx-12"
+            : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200 mx-6 sm:mx-12"
         } >
         projects
       </NavLink>
@@ -26,7 +26,7 @@ export default function Navbar() {
         to="/resume"
         className={({ isActive }) =>
         isActive
-          ? "text-base font-bold tracking-wide text-zinc-700 dark:text-zinc-400"
+          ? "text-base font-extrabold tracking-wide text-zinc-700 dark:text-zinc-400"
           : "text-base font-medium tracking-wide text-zinc-900 dark:text-zinc-200"
       } >
         resume

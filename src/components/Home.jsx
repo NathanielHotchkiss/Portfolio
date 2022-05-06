@@ -2,10 +2,10 @@ import memojiMacbook from "../images/memojiMacbook.png";
 
 export default function Home() {
   return (
-    <div className="flex place-items-center justify-center min-h-screen">
+    <div className="flex place-items-center justify-center min-h-screen mx-4">
       <div className="relative">
         <div className="flex flex-col sm:flex-row justify-center">
-          <div className="sm:mr-4 flex-shrink-0 self-center">
+          <div className="sm:mr-2 flex-shrink-0 self-center">
             <img
               className="h-24 w-24 mb-1 sm:mb-0 rounded-full shadow-lg dark:shadow-transparent dark:opacity-85"
               src={memojiMacbook}
@@ -24,16 +24,15 @@ export default function Home() {
                 Hello!
               </span>
             </span>
-            <div className="mx-6">
-              <span className="mt-4 text-5xl sm:text-6xl font-lora font-extrabold tracking-wide text-black dark:text-rose-500">
-                I'm Nathaniel Hotchkiss
-              </span>
-            </div>
+
+            <span className="block mt-4 text-5xl sm:text-6xl font-lora font-bold tracking-wide text-black dark:text-rose-500">
+              I'm Nathaniel Hotchkiss
+            </span>
           </div>
         </div>
 
-        <div className="max-w-prose my-6 mx-8 sm:mx-auto">
-          <p className="text-lg">
+        <div className="max-w-prose my-6 sm:mx-auto">
+          <p className="text-lg sm:ml-3">
             I leverage my knowledge of JavaScript to create simple,
             user-friendly websites and applications.
           </p>

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <ul className="flex h-full justify-center pt-2 space-x-7 md:space-x-14">
+      <ul className="flex justify-center h-full pt-2 space-x-7 md:space-x-14">
         <li className="hover:scale-110">
           <a
             href="https://twitter.com/DevNathanielH"
